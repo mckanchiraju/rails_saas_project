@@ -31,11 +31,11 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
       <% flash.each do |type, msg| %>
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
-      <%= yield %>
     </div>
+     <%= yield %>
   </body>
 </html>
