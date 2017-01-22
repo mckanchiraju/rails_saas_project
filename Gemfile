@@ -56,7 +56,6 @@ end
 group :production do
   #Use the PostgreSQL gem for Heroku production servers
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   gem 'pg', '0.18.4'
 end
 
